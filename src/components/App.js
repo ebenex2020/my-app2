@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div className="ui">
         <SearchBar onFormSubmit={this.onFormSubmit} />
-        {/* <div>Found : {this.state.images.length} images</div> */}
+
         <ImageList images={this.state.images} />
       </div>
     );

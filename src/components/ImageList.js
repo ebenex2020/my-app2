@@ -3,11 +3,7 @@ import ImgCard from "./ImgCard";
 
 const ImageList = ({ images }) => {
   const renderedImages = images.map((image) => {
-    return (
-      <div key={image.id}>
-        <ImgCard image={image} />
-      </div>
-    );
+    return <ImgCard key={image.id} image={image} />;
   });
 
   return <div className="image-list">{renderedImages}</div>;
